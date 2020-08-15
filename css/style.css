@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    overflow: auto;
+}
+
+#container{
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    min-height: 100vh;
+}
+
+#container header{
+    width: 100vw;
+}
+
+#container header img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: 5vw;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 770px){
+    #container header img{
+        margin-left: 2vw;
+    }
+}
+
+#container header h2{
+    float: left;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 2vw;
+    margin-top: 22px;
+}
+
+#container header ul li{
+    float: left;
+    list-style: none;
+    margin-left: 5vw;
+    font-size: 18px;
+    margin-top: 28px;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#container header ul li:hover{
+    color: dodgerblue;
+}
+
+@media only screen and (max-width: 740px){
+    #container header ul li{
+        display: none;
+    }
+}
+
+#ellipsis{
+    position: absolute;
+    right: 4%;
+    margin-top: 21px;
+    float: left;
+}
+
+#ellipsis span{
+    display: block;
+    width: 22px;
+    background: white;
+    height: 3px;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 741px){
+    #ellipsis{
+        display: none;
+    }
+}
+
+#bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+#details{
+    display: block;
+    width: 50%;
+}
+
+#details h2{
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-top: 30vh;
+    text-align: center;
+}
+
+#details p{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#details button{
+    width: 35%;
+    height: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 5vh;
+    margin-left: 33%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: dodgerblue;
+    color: white;
+}
+
+@media only screen and (max-width: 740px){
+    #details{
+        width: 100%;
+    }
+    #details h2{
+        margin-top: 20vh;
+    }
+    #details button{
+        width: 40%;
+    }
+}
+
+#services{
+    position: absolute;
+    width: 50%;
+    float: right;
+    top: 15vh;
+    right: 0;
+}
+
+#services .info{
+    width: 35%;
+    height: 35vh;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+#services .info:hover{
+    background: dodgerblue;
+}
+
+#services .info img{
+    width: 100%;
+    height: 25vh;
+    border-radius: 5px;
+}
+
+#services .info p{
+    font-size: 16px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1024px){
+    #services .info{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    #services{
+        width: 100%;
+        top: 70vh;
+    }
+    #services .info{
+        width: 45%;
+        margin-left: 3.5%;
+    }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
